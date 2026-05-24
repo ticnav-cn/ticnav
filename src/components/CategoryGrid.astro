@@ -1,10 +1,12 @@
 ---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 const categories = [
-  { key: 'guidelines', label: '临床指南', icon: '📋', color: 'bg-green-50 border-green-200 hover:border-green-400', textColor: 'text-green-700', href: '/guidelines/' },
-  { key: 'medications', label: '药品信息', icon: '💊', color: 'bg-blue-50 border-blue-200 hover:border-blue-400', textColor: 'text-blue-700', href: '/medications/' },
-  { key: 'hospitals', label: '就医导航', icon: '🏥', color: 'bg-purple-50 border-purple-200 hover:border-purple-400', textColor: 'text-purple-700', href: '/hospitals/' },
-  { key: 'communities', label: '病友社区', icon: '💬', color: 'bg-orange-50 border-orange-200 hover:border-orange-400', textColor: 'text-orange-700', href: '/communities/' },
-  { key: 'research', label: '研究资源', icon: '🔬', color: 'bg-indigo-50 border-indigo-200 hover:border-indigo-400', textColor: 'text-indigo-700', href: '/research/' },
+  { key: 'guidelines', label: '临床指南', icon: '📋', color: 'bg-green-50 border-green-200 hover:border-green-400', textColor: 'text-green-700', href: `${base}/guidelines/` },
+  { key: 'medications', label: '药品信息', icon: '💊', color: 'bg-blue-50 border-blue-200 hover:border-blue-400', textColor: 'text-blue-700', href: `${base}/medications/` },
+  { key: 'hospitals', label: '就医导航', icon: '🏥', color: 'bg-purple-50 border-purple-200 hover:border-purple-400', textColor: 'text-purple-700', href: `${base}/hospitals/` },
+  { key: 'communities', label: '病友社区', icon: '💬', color: 'bg-orange-50 border-orange-200 hover:border-orange-400', textColor: 'text-orange-700', href: `${base}/communities/` },
+  { key: 'research', label: '研究资源', icon: '🔬', color: 'bg-indigo-50 border-indigo-200 hover:border-indigo-400', textColor: 'text-indigo-700', href: `${base}/research/` },
 ];
 
 export type Props = { counts: Record<string, number> };

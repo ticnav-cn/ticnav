@@ -6,14 +6,16 @@ export type Props = { title: string; description?: string };
 
 const { title, description } = Astro.props;
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 const navItems = [
-  { label: '首页', href: '/' },
-  { label: '指南', href: '/guidelines/' },
-  { label: '药品', href: '/medications/' },
-  { label: '就医', href: '/hospitals/' },
-  { label: '社区', href: '/communities/' },
-  { label: '研究', href: '/research/' },
-  { label: '关于', href: '/about/' },
+  { label: '首页', href: `${base}/` },
+  { label: '指南', href: `${base}/guidelines/` },
+  { label: '药品', href: `${base}/medications/` },
+  { label: '就医', href: `${base}/hospitals/` },
+  { label: '社区', href: `${base}/communities/` },
+  { label: '研究', href: `${base}/research/` },
+  { label: '关于', href: `${base}/about/` },
 ];
 ---
 
@@ -38,7 +40,7 @@ const navItems = [
   <body class="bg-gray-50 min-h-screen">
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2">
+        <a href={`${base}/`} class="flex items-center gap-2">
           <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white text-xs font-bold">TN</span>
           <span class="text-lg font-bold text-gray-900">TicNav</span>
         </a>
@@ -67,7 +69,7 @@ const navItems = [
     <DisclaimerBanner position="bottom" />
 
     <footer class="text-center text-xs text-gray-400 py-4 border-t border-gray-100">
-      <p>TicNav · 本站仅提供信息索引 · <a href="/about/" class="text-gray-500 hover:text-indigo-600 transition-colors">关于</a> · <a href="/contribute/" class="text-gray-500 hover:text-indigo-600 transition-colors">贡献</a></p>
+      <p>TicNav · 本站仅提供信息索引 · <a href={`${base}/about/`} class="text-gray-500 hover:text-indigo-600 transition-colors">关于</a> · <a href={`${base}/contribute/`} class="text-gray-500 hover:text-indigo-600 transition-colors">贡献</a></p>
     </footer>
 
     <script>
