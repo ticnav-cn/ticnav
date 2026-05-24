@@ -24,7 +24,7 @@ const community = entries.filter((e: any) => e.trust_level === 'community');
             subtitle={entry.description}
             url={entry.url}
             trustLevel={entry.trust_level}
-            lang="zh"
+            lang={entry.lang}
           />
         ))}
       </div>

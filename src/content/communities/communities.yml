@@ -3,6 +3,7 @@ entries:
     platform: 网站社群
     url: https://antuobang.shchildren.com.cn/
     trust_level: verified_org
+    lang: zh
     description: "上海宋庆龄基金会+上海市儿童医院联合发起的儿童抽动障碍公益社区，含科普、义诊和互助"
     member_count_estimate: "1000+"
   - name: "妥友之家"
@@ -39,12 +40,14 @@ entries:
     platform: 国际组织社群
     url: https://tourette.org/
     trust_level: verified_org
+    lang: en
     description: "美国Tourette协会官方社区(1972年成立)，含资源、支持组、月度webinar、线下活动"
     member_count_estimate: "全球范围"
   - name: "香港妥瑞症协会"
     platform: 地区组织
     url: https://tourette.org.hk/zh/about-tourette-syndrome-zh/
     trust_level: verified_org
+    lang: zh
     description: "香港妥瑞症协会，提供中文资源、社区支持和相关链接(台灣/英國/澳洲妥瑞症協會)"
   - name: "小红书 #抽动症 话题"
     platform: 小红书
