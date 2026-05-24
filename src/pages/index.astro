@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import CategoryGrid from '../components/CategoryGrid.astro';
+import DisclaimerBanner from '../components/DisclaimerBanner.astro';
+
+import { getCollection } from 'astro:content';
+
+const metaCollection = await getCollection('meta');
+const meta = metaCollection[0]?.data ?? {};
+
+const guidelines = await getCollection('guidelines');
+const medications = await getCollection('medications');
+const hospitals = await getCollection('hospitals');
+const communities = await getCollection('communities');
+const research = await getCollection('research');
+
+const counts = {
+  guidelines: guidelines[0]?.data?.entries?.length ?? 0,
+  medications: medications[0]?.data?.entries?.length ?? 0,
+  hospitals: hospitals[0]?.data?.entries?.length ?? 0,
+  communities: communities[0]?.data?.entries?.length ?? 0,
+  research: research[0]?.data?.entries?.length ?? 0,
+};
+---
+
+<Base title="首页" description="TicNav - 抽动症信息导航站，帮患者找到信息在哪里">
+  <section class="hero-gradient rounded-xl p-6 mb-6 text-center">
+    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-indigo-600 text-white text-xl font-bold mb-3">TN</div>
+    <h1 class="text-2xl font-bold text-gray-900">TicNav · {meta.name}</h1>
+    <p class="text-base text-gray-600 mt-2 max-w-md mx-auto">帮患者找到信息在哪里</p>
+    <p class="text-xs text-gray-500 mt-3">{meta.description} · ICD-10: {meta.icd10} · 患病率: {meta.prevalence} · 发病年龄: {meta.onset_age}</p>
+  </section>
+
+  <section class="mb-6 p-4 rounded-xl bg-blue-50 border border-blue-200 shadow-sm">
+    <div class="flex items-start gap-3">
+      <div class="shrink-0 mt-0.5">
+        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div>
+        <h2 class="text-sm font-semibold text-blue-800">新确诊？从这里开始</h2>
+        <p class="text-xs text-blue-700 mt-1">先阅读<a href="/guidelines/" class="underline font-semibold hover:text-blue-900">临床指南</a>了解疾病全貌，再查看<a href="/hospitals/" class="underline font-semibold hover:text-blue-900">就医导航</a>找到专科医生。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-lg font-semibold text-gray-900 mb-4">信息分类</h2>
+    <CategoryGrid counts={counts} />
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-lg font-semibold text-gray-900 mb-3">别名检索</h2>
+    <div class="flex flex-wrap gap-2">
+      {meta.aliases?.map((alias: string) => (
+        <span class="text-xs px-3 py-1.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100">{alias}</span>
+      ))}
+    </div>
+    <p class="text-xs text-gray-400 mt-2">以上名称均指同一组疾病，搜索时可任选其一</p>
+  </section>
+
+  <DisclaimerBanner position="top" />
+</Base>

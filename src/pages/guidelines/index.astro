@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import EntryCard from '../../components/EntryCard.astro';
+import { getCollection } from 'astro:content';
+
+const collection = await getCollection('guidelines');
+const entries = collection[0]?.data?.entries ?? [];
+const sorted = [...entries].sort((a, b) => b.year - a.year);
+---
+
+<Base title="临床指南" description="抽动障碍临床指南和专家共识索引">
+  <h1 class="text-xl font-bold text-gray-900 mb-2">临床指南 / 专家共识</h1>
+  <p class="text-sm text-gray-600 mb-4">国内外权威的抽动障碍诊疗指南和共识文件</p>
+
+  <div class="space-y-3">
+    {sorted.map((entry: any) => (
+      <EntryCard
+        title={entry.title}
+        subtitle={entry.summary}
+        url={entry.url}
+        trustLevel={entry.trust_level}
+        lang={entry.lang}
+        organization={entry.organization}
+        year={entry.year}
+        tags={entry.tags}
+        hasChineseVersion={entry.has_chinese_version}
+        chineseVersionUrl={entry.chinese_version_url}
+      />
+    ))}
+  </div>
+</Base>

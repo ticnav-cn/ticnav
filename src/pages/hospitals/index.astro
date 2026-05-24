@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import TrustBadge from '../../components/TrustBadge.astro';
+import { getCollection } from 'astro:content';
+
+const collection = await getCollection('hospitals');
+const entries = collection[0]?.data?.entries ?? [];
+
+const byCity: Record<string, any[]> = {};
+entries.forEach((entry: any) => {
+  if (!byCity[entry.city]) byCity[entry.city] = [];
+  byCity[entry.city].push(entry);
+});
+const cities = Object.keys(byCity);
+---
+
+<Base title="就医导航" description="抽动障碍推荐医院和专科门诊导航">
+  <h1 class="text-xl font-bold text-gray-900 mb-2">就医导航</h1>
+  <p class="text-sm text-gray-600 mb-4">推荐抽动障碍相关专科门诊和医院</p>
+
+  {cities.map((city) => (
+    <section class="mb-6">
+      <h2 class="text-base font-semibold text-gray-800 mb-3 flex items-center gap-1">
+        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        {city}
+      </h2>
+      <div class="space-y-3">
+        {byCity[city].map((entry: any) => (
+          <a href={entry.url} target="_blank" rel="noopener noreferrer" class="block p-4 rounded-lg border border-gray-200 bg-white hover:border-gray-400 hover:shadow-sm transition-all group">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex-1">
+                <h3 class="text-sm font-semibold text-gray-900 group-hover:text-blue-600">
+                  {entry.name}
+                  {entry.has_specialty_clinic && <span class="text-yellow-500 ml-1" title="有专科门诊">⭐</span>}
+                </h3>
+                <p class="text-xs text-gray-500 mt-0.5">{entry.department}</p>
+                <div class="flex gap-1 mt-1">
+                  {entry.specialty.map((s: string) => <span class="text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-600">{s}</span>)}
+                </div>
+                {entry.notes && <p class="text-xs text-gray-600 mt-1">{entry.notes}</p>}
+              </div>
+              <TrustBadge level={entry.trust_level} />
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

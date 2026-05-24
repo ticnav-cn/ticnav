@@ -1,0 +1,54 @@
+entries:
+  - name: "安妥邦爱动天使社区（Tourettopia）"
+    platform: 网站社群
+    url: https://antuobang.shchildren.com.cn/
+    trust_level: verified_org
+    description: "上海宋庆龄基金会+上海市儿童医院联合发起的儿童抽动障碍公益社区，含科普、义诊和互助"
+    member_count_estimate: "1000+"
+  - name: "妥友之家"
+    platform: 社群组织
+    url: http://news.cyol.com/yuanchuang/2018-11/07/content_17760153.htm
+    trust_level: community
+    description: "妥瑞症患者互助组织，发起人蒋云生推动患者社群建立和社会认知提升"
+    caution: "民间互助组织，非医学权威"
+  - name: "海夫人博客"
+    platform: 博客/QQ群
+    url: https://read678.com/JdBook/index/42036
+    trust_level: community
+    description: "妥瑞症患者母亲赵云清自2009年起撰写近千篇原创文章，建起13个QQ群聚集1万+患儿家长"
+    caution: "个人经验分享，不具医学权威性"
+  - name: "感'动'论坛"
+    platform: 网站论坛
+    url: http://www.ts-adhd.com/
+    trust_level: community
+    description: "儿童多动抽动障碍科学世界论坛，含专家面对面、病友交流"
+    caution: "混合病友经验和科普内容，需甄别"
+  - name: "抽动症贴吧"
+    platform: 百度贴吧
+    url: https://tieba.baidu.com/f?kw=抽动症
+    trust_level: community
+    description: "最大的中文抽动症病友讨论区"
+    caution: "内容为病友个人经验，不具医学权威性"
+  - name: "多动症抽动症交流群"
+    platform: 腾讯频道
+    url: https://pd.qq.com/g/pd35464865
+    trust_level: community
+    description: "腾讯频道上的抽动症家长交流群，含家庭教育交流会"
+    caution: "病友个人经验交流，不具医学权威性"
+  - name: "Tourette Association of America 社区"
+    platform: 国际组织社群
+    url: https://tourette.org/
+    trust_level: verified_org
+    description: "美国Tourette协会官方社区(1972年成立)，含资源、支持组、月度webinar、线下活动"
+    member_count_estimate: "全球范围"
+  - name: "香港妥瑞症协会"
+    platform: 地区组织
+    url: https://tourette.org.hk/zh/about-tourette-syndrome-zh/
+    trust_level: verified_org
+    description: "香港妥瑞症协会，提供中文资源、社区支持和相关链接(台灣/英國/澳洲妥瑞症協會)"
+  - name: "小红书 #抽动症 话题"
+    platform: 小红书
+    url: https://www.xiaohongshu.com/search_result?keyword=抽动症
+    trust_level: community
+    description: "小红书上抽动症相关的家长经验分享"
+    caution: "内容为病友个人经验，不具医学权威性"

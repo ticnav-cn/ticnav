@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import EntryCard from '../../components/EntryCard.astro';
+import { getCollection } from 'astro:content';
+
+const collection = await getCollection('communities');
+const entries = collection[0]?.data?.entries ?? [];
+
+const verified = entries.filter((e: any) => e.trust_level === 'verified_org' || e.trust_level === 'official');
+const community = entries.filter((e: any) => e.trust_level === 'community');
+---
+
+<Base title="病友社区" description="抽动症病友社区和经验分享平台索引">
+  <h1 class="text-xl font-bold text-gray-900 mb-2">病友社区 / 经验分享</h1>
+  <p class="text-sm text-gray-600 mb-4">抽动症患者和家属的互助社区与经验分享平台</p>
+
+  {verified.length > 0 && (
+    <section class="mb-6">
+      <h2 class="text-base font-semibold text-gray-800 mb-3">认证组织</h2>
+      <div class="space-y-3">
+        {verified.map((entry: any) => (
+          <EntryCard
+            title={entry.name}
+            subtitle={entry.description}
+            url={entry.url}
+            trustLevel={entry.trust_level}
+            lang="zh"
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {community.length > 0 && (
+    <section class="mb-6">
+      <h2 class="text-base font-semibold text-gray-800 mb-3">病友社区</h2>
+      <div class="p-3 rounded bg-orange-50 border border-orange-100 text-orange-800 text-xs mb-3">
+        以下为病友个人经验分享平台，内容不具医学权威性，请谨慎参考。
+      </div>
+      <div class="space-y-3">
+        {community.map((entry: any) => (
+          <EntryCard
+            title={entry.name}
+            subtitle={entry.description}
+            url={entry.url}
+            trustLevel={entry.trust_level}
+            caution={entry.caution}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+</Base>

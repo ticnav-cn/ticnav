@@ -1,0 +1,83 @@
+---
+import DisclaimerBanner from '../components/DisclaimerBanner.astro';
+import '../styles/global.css';
+
+export type Props = { title: string; description?: string };
+
+const { title, description } = Astro.props;
+
+const navItems = [
+  { label: '首页', href: '/' },
+  { label: '指南', href: '/guidelines/' },
+  { label: '药品', href: '/medications/' },
+  { label: '就医', href: '/hospitals/' },
+  { label: '社区', href: '/communities/' },
+  { label: '研究', href: '/research/' },
+  { label: '关于', href: '/about/' },
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description ?? 'TicNav - 抽动症信息导航站，帮患者找到信息在哪里'} />
+    <meta name="keywords" content="抽动症,抽动障碍,Tourette综合征,妥瑞症,图雷特综合征,抽动秽语综合征,信息导航,临床指南,就医导航" />
+    <meta property="og:title" content={`${title} | TicNav`} />
+    <meta property="og:description" content={description ?? 'TicNav - 抽动症信息导航站，帮患者找到信息在哪里'} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="TicNav" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`${title} | TicNav`} />
+    <meta name="twitter:description" content={description ?? 'TicNav - 抽动症信息导航站，帮患者找到信息在哪里'} />
+    <link rel="canonical" href={Astro.url.href} />
+    <title>{title} | TicNav</title>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white text-xs font-bold">TN</span>
+          <span class="text-lg font-bold text-gray-900">TicNav</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-4 text-sm text-gray-600">
+          {navItems.map((item) => (
+            <a href={item.href} class="nav-link hover:text-indigo-600">{item.label}</a>
+          ))}
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="菜单">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 bg-white">
+        <div class="px-4 py-3 flex flex-wrap gap-3 text-sm text-gray-600">
+          {navItems.map((item) => (
+            <a href={item.href} class="nav-link">{item.label}</a>
+          ))}
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-6">
+      {Astro.slots.render('default')}
+    </main>
+
+    <DisclaimerBanner position="bottom" />
+
+    <footer class="text-center text-xs text-gray-400 py-4 border-t border-gray-100">
+      <p>TicNav · 本站仅提供信息索引 · <a href="/about/" class="text-gray-500 hover:text-indigo-600 transition-colors">关于</a> · <a href="/contribute/" class="text-gray-500 hover:text-indigo-600 transition-colors">贡献</a></p>
+    </footer>
+
+    <script>
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    </script>
+  </body>
+</html>

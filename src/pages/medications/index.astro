@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import TrustBadge from '../../components/TrustBadge.astro';
+import { getCollection } from 'astro:content';
+
+const collection = await getCollection('medications');
+const entries = collection[0]?.data?.entries ?? [];
+
+const groups: Record<string, any[]> = {};
+entries.forEach((entry: any) => {
+  const cat = entry.category;
+  if (!groups[cat]) groups[cat] = [];
+  groups[cat].push(entry);
+});
+---
+
+<Base title="药品信息" description="抽动障碍常用药品信息索引">
+  <h1 class="text-xl font-bold text-gray-900 mb-2">药品信息</h1>
+  <p class="text-sm text-gray-600 mb-4">抽动障碍相关药品信息索引。本站不提供用药剂量建议，请遵医嘱。</p>
+
+  <div class="p-3 rounded bg-yellow-50 border border-yellow-100 text-yellow-800 text-xs mb-4">
+    注意：以下仅为药品信息索引，不包含用药剂量建议。用药请务必遵医嘱。
+  </div>
+
+  {Object.entries(groups).map(([category, items]) => (
+    <section class="mb-6">
+      <h2 class="text-base font-semibold text-gray-800 mb-3">{category}</h2>
+      <div class="space-y-3">
+        {items.map((entry: any) => (
+          <div class="p-4 rounded-lg border border-gray-200 bg-white">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex-1">
+                <h3 class="text-sm font-semibold text-gray-900">{entry.name}</h3>
+                <p class="text-xs text-gray-500 mt-0.5">适应证: {entry.indication}</p>
+                {entry.notes && <p class="text-xs text-gray-600 mt-1">{entry.notes}</p>}
+                {entry.side_effects && (
+                  <div class="mt-1.5">
+                    <span class="text-xs text-gray-500">常见副作用: </span>
+                    <span class="text-xs text-gray-600">{entry.side_effects.join('、')}</span>
+                  </div>
+                )}
+                {entry.availability && (
+                  <div class="mt-1">
+                    <span class="text-xs text-gray-500">获取方式: </span>
+                    <span class="text-xs text-gray-600">{entry.availability.join('、')}</span>
+                  </div>
+                )}
+                <div class="mt-2 flex gap-2">
+                  {entry.sources.map((s: any) => (
+                    <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-xs text-blue-500 hover:underline">{s.label}</a>
+                  ))}
+                </div>
+              </div>
+              <TrustBadge level={entry.trust_level} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

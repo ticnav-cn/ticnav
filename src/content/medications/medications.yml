@@ -1,0 +1,85 @@
+entries:
+  - name: "硫必利（Tiapride）"
+    category: 多巴胺受体阻滞剂
+    indication: "轻中度抽动，国内一线用药"
+    trust_level: official
+    sources:
+      - label: "2026国内专家共识推荐一线"
+        url: https://drugs.dxy.cn/pc/clinicalGuidelines/pKOB5AClck6YYkqIDegSzrg
+    notes: "国内抽动障碍一线用药，临床使用经验丰富，起效较快"
+    side_effects: [嗜睡, 头晕, 胃肠道反应]
+    availability: [处方药, 国内可购]
+  - name: "阿立哌唑（Aripiprazole）"
+    category: 多巴胺部分激动剂
+    indication: "中重度抽动，ESSTS首选推荐"
+    trust_level: official
+    sources:
+      - label: "ESSTS指南首选推荐（儿童和成人）"
+        url: https://link.springer.com/article/10.1007/s00787-021-01899-z
+      - label: "AAN指南推荐"
+        url: https://www.aan.com/Guidelines/home/GuidelineDetail/958
+    notes: "ESSTS专家调查中儿童和成人首选药物，不良反应谱优于传统抗精神病药"
+    side_effects: [体重增加, 嗜睡, 震颤, 头痛]
+    availability: [处方药, 国内可购]
+  - name: "可乐定透皮贴片（Clonidine Transdermal Patch）"
+    category: α2-肾上腺素能激动剂
+    indication: "轻中度抽动，尤其合并ADHD"
+    trust_level: official
+    sources:
+      - label: "2025可乐定透皮贴片专家共识13条推荐"
+        url: https://www.zgsyz.com/zgsyek/CN/10.19538/j.ek2025040601
+      - label: "AAN指南推荐"
+        url: https://www.aan.com/Guidelines/home/GuidelineDetail/958
+    notes: "2025年发布专项专家共识明确使用情景，不良反应显著低于氟哌啶醇(8% vs 37%)"
+    side_effects: [嗜睡, 口干, 低血压, 局部皮肤反应]
+    availability: [处方药, 国内可购]
+  - name: "芍麻止痉颗粒"
+    category: 中成药
+    indication: "慢性抽动障碍和Tourette综合征，中重度"
+    trust_level: official
+    sources:
+      - label: "儿童抽动障碍规范化门诊建设专家共识推荐"
+        url: https://www.zgsyz.com/zgsyek/CN/10.19538/j.ek2025040601
+    notes: "III期临床试验(603例)证实与硫必利等效，缓解率74%，不良反应显著低于硫必利(13.8% vs 26%)，进入ESSTS国际指南"
+    side_effects: [轻微胃肠道反应, 嗜睡]
+    availability: [处方中成药, 国内可购]
+  - name: "利培酮（Risperidone）"
+    category: 非典型抗精神病药
+    indication: "中重度抽动，二线用药"
+    trust_level: expert
+    sources:
+      - label: "AAN指南推荐"
+        url: https://www.aan.com/Guidelines/home/GuidelineDetail/958
+    notes: "AAN指南推荐，非典型抗精神病药，2024年RCT对比ERP显示两者均有效"
+    side_effects: [体重增加, 嗜睡, 锥体外系反应]
+    availability: [处方药, 国内可购]
+  - name: "氟哌啶醇（Haloperidol）"
+    category: 传统抗精神病药
+    indication: "重度抽动，最后选择"
+    trust_level: expert
+    sources:
+      - label: "ESSTS指南推荐"
+        url: https://link.springer.com/article/10.1007/s00787-021-01899-z
+    notes: "传统抗精神病药，不良反应发生率37%(可乐定对比数据)，通常作为最后选择"
+    side_effects: [锥体外系反应, 嗜睡, 体重增加]
+    availability: [处方药, 国内可购]
+  - name: "匹莫齐特（Pimozide）"
+    category: 传统抗精神病药
+    indication: "重度抽动，治疗抵抗病例"
+    trust_level: expert
+    sources:
+      - label: "ESSTS指南推荐"
+        url: https://link.springer.com/article/10.1007/s00787-021-01899-z
+    notes: "ESSTS指南用于治疗抵抗病例，国内使用较少，需监测心电图"
+    side_effects: [锥体外系反应, 心电图改变, 嗜睡]
+    availability: [处方药, 国内货源有限]
+  - name: "胍法辛（Guanfacine）"
+    category: α2-肾上腺素能激动剂
+    indication: "轻中度抽动，尤其合并ADHD"
+    trust_level: expert
+    sources:
+      - label: "ESSTS指南推荐"
+        url: https://link.springer.com/article/10.1007/s00787-021-01899/z
+    notes: "ESSTS指南推荐，尤其适用于合并ADHD的抽动患者，6岁以下使用量已超过抗精神病药"
+    side_effects: [嗜睡, 头晕, 低血压]
+    availability: [处方药, 国内货源有限]

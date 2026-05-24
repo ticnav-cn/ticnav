@@ -1,0 +1,77 @@
+entries:
+  - name: "上海交通大学医学院附属上海市儿童医院 小儿神经内科"
+    city: 上海
+    department: 小儿神经内科
+    specialty: [抽动障碍专科门诊, 中国抽动障碍协作组领衔单位]
+    trust_level: official
+    has_specialty_clinic: true
+    url: https://antuobang.shchildren.com.cn/
+    notes: "中国儿童抽动障碍协作组领衔单位，安妥邦爱动天使公益项目发起医院，设有抽动障碍专科门诊"
+  - name: "首都医科大学附属北京儿童医院 神经内科"
+    city: 北京
+    department: 神经内科/精神心理科
+    specialty: [小儿神经内科, 抽动障碍, ADHD, 运动障碍]
+    trust_level: official
+    has_specialty_clinic: true
+    url: https://www.bch.com.cn/
+    notes: "全国最大的儿童医院之一，陆小彦主任医师专注抽动症近三十载，金洪主任医师擅长抽动障碍等儿童神经系统疾病"
+  - name: "北京中医药大学东方医院 儿科诊疗中心"
+    city: 北京
+    department: 儿科诊疗中心
+    specialty: [小儿抽动症专病门诊, 中医辨治]
+    trust_level: official
+    has_specialty_clinic: true
+    url: https://www.dongfangyy.com.cn/Html/Departments/Main/Detail_937.html
+    notes: "王素梅教授领衔的抽动症专病门诊，《中西医联合治疗儿童抽动障碍专家共识》牵头人之一"
+  - name: "北京中医药大学东直门医院 儿科"
+    city: 北京
+    department: 儿科
+    specialty: [小儿抽动症专病门诊, 中医多元辨证体系]
+    trust_level: official
+    has_specialty_clinic: true
+    url: https://news.qq.com/rain/a/20250904A07VVZ00
+    notes: "2025年9月正式开设小儿抽动症专病门诊，通州院区和国际部均有出诊"
+  - name: "空军军医大学西京医院 儿科"
+    city: 西安
+    department: 儿科/儿童神经专科
+    specialty: [儿童抽动障碍规范化门诊区域中心, MDT会诊]
+    trust_level: official
+    has_specialty_clinic: true
+    url: https://health.hsw.cn/system/2025/1213/89651.shtml
+    notes: "中国抽动障碍协作组授予'规范化门诊区域中心'，年门诊5700人次，覆盖西北地区三级诊疗网络"
+  - name: "北京协和医院 神内科"
+    city: 北京
+    department: 神内科
+    specialty: [罕见病诊疗中心, 运动障碍]
+    trust_level: official
+    url: https://www.pumch.cn/
+    notes: "国家罕见病诊疗中心，神经内科实力雄厚"
+  - name: "首都医科大学附属北京安定医院"
+    city: 北京
+    department: 精神科
+    specialty: [抽动障碍, 难治性抽动障碍, MDT]
+    trust_level: official
+    url: https://www.andinghospital.com/
+    notes: "崔永华教授牵头《难治性抽动障碍定义和诊治专家共识(2026)》，专注抽动障碍精神科诊疗"
+  - name: "复旦大学附属华山医院 神内科"
+    city: 上海
+    department: 神内科
+    specialty: [运动障碍, 神内科]
+    trust_level: official
+    url: https://www.huashan.org.cn/
+    notes: "国内顶级神经内科，运动障碍亚专业实力强"
+  - name: "中山大学附属第一医院 神内科"
+    city: 广州
+    department: 神内科
+    specialty: [神经内科, 运动障碍]
+    trust_level: official
+    url: https://www.fahsysu.org.cn/
+    notes: "华南地区顶级神经内科"
+  - name: "北京中医药大学第三附属医院 儿科"
+    city: 北京
+    department: 儿科
+    specialty: [儿童抽动多动自闭门诊, 中医内外合治]
+    trust_level: official
+    has_specialty_clinic: true
+    url: https://zydsy.com/Html/News/Articles/1385.html
+    notes: "开设小儿抽动多动专病门诊，配备耶鲁抽动量表评分、注意力测试等神经测评系统"

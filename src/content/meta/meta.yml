@@ -1,0 +1,9 @@
+id: tic-disorder
+name: 抽动障碍
+name_en: Tic Disorders
+aliases: [抽动症, 妥瑞症, Tourette综合征, 图雷特综合征, 抽动秽语综合征, 妥瑞氏症]
+icd10: F95
+description: 一组起病于儿童和青少年时期的神经发育障碍，以突然、快速、反复的运动或发声抽动为特征，常共患ADHD(50%)、OCD、焦虑抑郁等。
+prevalence: "学龄儿童2.5%，TS约0.3-0.9%"
+onset_age: "2-15岁，平均7岁，男多于女3-4倍"
+last_updated: "2026-05-24"

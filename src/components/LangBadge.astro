@@ -1,0 +1,16 @@
+---
+export type Props = { lang: string };
+
+const config: Record<string, { label: string; color: string; bg: string }> = {
+  zh: { label: '中文', color: 'text-red-700', bg: 'bg-red-50' },
+  en: { label: '英文', color: 'text-indigo-700', bg: 'bg-indigo-50' },
+  mixed: { label: '中英', color: 'text-purple-700', bg: 'bg-purple-50' },
+};
+
+const { lang } = Astro.props;
+const c = config[lang] ?? config.mixed;
+---
+
+<span class={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${c.bg} ${c.color}`}>
+  {c.label}
+</span>

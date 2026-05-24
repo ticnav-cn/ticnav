@@ -1,0 +1,83 @@
+entries:
+  - title: "中国儿童抽动障碍专家共识（2026）"
+    organization: 中华医学会儿科学分会神经学组抽动障碍协作组
+    year: 2026
+    lang: zh
+    url: https://drugs.dxy.cn/pc/clinicalGuidelines/pKOB5AClck6YYkqIDegSzrg
+    trust_level: official
+    tags: [诊断, 治疗, 全病程管理, 多学科协作]
+    summary: "2026年最新更新版，强调全病程管理、MDT协作及以家庭为中心的综合干预模式"
+  - title: "难治性抽动障碍的定义和诊治专家共识（2026）"
+    organization: 中华医学会儿科学分会神经学组抽动障碍协作组
+    year: 2026
+    lang: zh
+    url: https://drugs.dxy.cn/pc/clinicalGuidelines/pKOB5AClck6YYkqIDegSzrg
+    trust_level: official
+    tags: [难治性, 诊断, 治疗, 联合用药]
+    summary: "首次明确难治性抽动障碍定义及诊疗措施，28条推荐意见"
+  - title: "儿童抽动障碍共患强迫障碍诊断与治疗专家共识(2025)"
+    organization: 中华医学会儿科学分会神经学组抽动障碍协作组
+    year: 2025
+    lang: zh
+    url: https://drugs.dxy.cn/pc/clinicalGuidelines/pgiKfhYLyHbLQPqyT-0jFxQ
+    trust_level: official
+    tags: [共患病, 强迫障碍, 诊断, 治疗]
+    summary: "指导抽动障碍共患强迫障碍的临床诊断与规范治疗"
+  - title: "可乐定透皮贴片治疗儿童抽动障碍专家共识"
+    organization: 中国中西医结合学会儿科专业委员会/中华医学会儿科学分会神经学组抽动障碍协作组
+    year: 2025
+    lang: zh
+    url: https://www.zgsyz.com/zgsyek/CN/10.19538/j.ek2025040601
+    trust_level: official
+    tags: [可乐定, 透皮贴片, 药物治疗]
+    summary: "改良德尔菲法制定13条推荐意见，明确可乐定透皮贴片使用情景"
+  - title: "儿童抽动障碍中医外治专家共识(2024)"
+    organization: 国家儿童医学中心/中医儿科专家组
+    year: 2024
+    lang: zh
+    url: https://cjournal.hep.com.cn/1674-3865/CN/PDF/Y2024/V16/I01/1
+    trust_level: official
+    tags: [中医, 外治法, 针灸, 推拿, 耳穴]
+    summary: "涵盖针灸、推拿、毫针针刺、皮内针、耳穴贴压等中医外治技术规范"
+  - title: "中西医联合治疗儿童抽动障碍专家共识"
+    organization: 天津中医药大学第一附属医院/北京中医药大学东方医院
+    year: 2024
+    lang: zh
+    url: https://wsjk.tj.gov.cn/XWZX6600/YQFKDT1752/202412/t20241226_6816249.html
+    trust_level: official
+    tags: [中西医结合, 联合治疗, 难治性]
+    summary: "首部中西医联合治疗共识，提出'宜中则中、宜西则西、宜联合则联合'"
+  - title: "中医儿科临床诊疗指南·抽动障碍（修订）"
+    organization: 中华中医药学会
+    year: 2019
+    lang: zh
+    url: https://www.medsci.cn/guideline/show_article.do?id=3d2091c0018a9401
+    trust_level: official
+    tags: [中医, 诊断, 辨证, 治疗, 调护]
+    summary: "中医角度的抽动障碍诊疗指南修订版"
+  - title: "神经调控治疗儿童抽动障碍专家共识（2026版）"
+    organization: 中华医学会儿科学分会
+    year: 2026
+    lang: zh
+    url: https://www.zgsyz.com/zgsyek/CN/10.19538/j.ek2025040609
+    trust_level: official
+    tags: [神经调控, DBS, rTMS, 迷走神经刺激]
+    summary: "涵盖DBS、rTMS、VNS等神经调控治疗规范，1Hz低频rTMS刺激SMA为推荐方案"
+  - title: "ESSTS临床指南：Tourette综合征和其他抽动障碍（2.0版）"
+    organization: 欧洲抽动秽语综合征研究学会
+    year: 2021
+    lang: en
+    url: https://link.springer.com/article/10.1007/s00787-021-01892-6
+    trust_level: official
+    has_chinese_version: false
+    tags: [诊断, 心理干预, 药物治疗, DBS]
+    summary: "欧洲最权威TS指南2.0版，4部分：评估、心理干预、药物治疗、DBS"
+  - title: "2019 AAN实践指南：Tourette综合征和慢性抽动障碍患者的抽动治疗"
+    organization: 美国神经病学学会
+    year: 2019
+    lang: en
+    url: https://www.aan.com/Guidelines/home/GuidelineDetail/958
+    trust_level: official
+    has_chinese_version: false
+    tags: [药物治疗, 行为治疗, CBIT]
+    summary: "美国AAN官方抽动治疗指南，46条推荐意见，2025年4月reaffirmed"

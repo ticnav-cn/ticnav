@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="关于本站" description="TicNav关于页面和免责声明">
+  <h1 class="text-xl font-bold text-gray-900 mb-4">关于 TicNav</h1>
+
+  <section class="mb-6">
+    <h2 class="text-base font-semibold text-gray-800 mb-2">这是什么</h2>
+    <p class="text-sm text-gray-600">TicNav 是一个抽动障碍（Tic Disorders，含 Tourette 综合征）的信息导航站。我们不提供医学建议，只做一件事：<strong>帮患者找到信息在哪里</strong>。</p>
+    <p class="text-sm text-gray-600 mt-2">临床指南、药品信息、推荐医院、病友社区、研究资源——这些信息散落在互联网各处，TicNav 把它们聚合到一起，标注可信度，让你一眼就知道该信任什么。</p>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-base font-semibold text-gray-800 mb-2">可信度标注</h2>
+    <ul class="text-sm text-gray-600 space-y-1">
+      <li>🟢 <strong>官方权威</strong> — 国家/国际医学学会发布的正式指南、药监局批准信息</li>
+      <li>🔵 <strong>专家观点</strong> — 学术论文、专业医生观点</li>
+      <li>🟡 <strong>认证组织</strong> — 有医疗机构背书的公益/患者组织</li>
+      <li>🔶 <strong>病友经验</strong> — 患者个人分享，需谨慎参考</li>
+      <li>🔴 <strong>待验证</strong> — 来源不明，默认隐藏</li>
+    </ul>
+  </section>
+
+  <section class="mb-6 p-4 rounded-lg bg-red-50 border border-red-100">
+    <h2 class="text-base font-semibold text-red-800 mb-2">免责声明</h2>
+    <ul class="text-sm text-red-700 space-y-1">
+      <li>本站<strong>仅提供信息索引</strong>，不替代医疗咨询</li>
+      <li>本站<strong>不提供诊疗建议</strong>，不推荐具体治疗方案</li>
+      <li>药品信息<strong>不包含剂量建议</strong>，用药请遵医嘱</li>
+      <li>病友经验类内容<strong>不具医学权威性</strong>，仅供参考</li>
+      <li>如有健康问题，请<strong>咨询专业医生</strong></li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-base font-semibold text-gray-800 mb-2">技术</h2>
+    <p class="text-sm text-gray-600">TicNav 是一个开源静态站点，使用 Astro 构建，数据存储在 YAML 文件中。任何人都可以通过 GitHub 提交新数据。</p>
+    <p class="text-sm text-gray-600 mt-2">开源协议：MIT（代码） / CC-BY（数据）</p>
+  </section>
+</Base>

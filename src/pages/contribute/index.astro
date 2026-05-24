@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="贡献数据" description="如何向TicNav提交新的信息链接">
+  <h1 class="text-xl font-bold text-gray-900 mb-4">如何贡献数据</h1>
+
+  <section class="mb-6">
+    <h2 class="text-base font-semibold text-gray-800 mb-2">为什么贡献</h2>
+    <p class="text-sm text-gray-600">TicNav 的数据由社区驱动。如果你发现了一个有用的链接、一家有专科门诊的医院、或者一个靠谱的病友社区，贡献出来就能帮到其他患者和家属。</p>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-base font-semibold text-gray-800 mb-2">三种贡献方式</h2>
+
+    <div class="space-y-3">
+      <div class="p-4 rounded-lg border border-gray-200 bg-white">
+        <h3 class="text-sm font-semibold text-gray-900">方式 A：GitHub Issue（推荐）</h3>
+        <p class="text-xs text-gray-600 mt-1">在仓库中提交 Issue，使用预填模板，维护者审核后录入。</p>
+      </div>
+
+      <div class="p-4 rounded-lg border border-gray-200 bg-white">
+        <h3 class="text-sm font-semibold text-gray-900">方式 B：直接 PR</h3>
+        <p class="text-xs text-gray-600 mt-1">Fork 仓库 → 编辑对应 YAML 文件 → 提交 Pull Request。适合有 GitHub 使用经验的人。</p>
+      </div>
+
+      <div class="p-4 rounded-lg border border-gray-200 bg-white">
+        <h3 class="text-sm font-semibold text-gray-900">方式 C：表单提交（低门槛）</h3>
+        <p class="text-xs text-gray-600 mt-1">通过腾讯问卷/Google Form 提交，维护者定期手动录入。适合不熟悉 GitHub 的用户。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-base font-semibold text-gray-800 mb-2">Issue 模板</h2>
+    <div class="p-3 rounded bg-gray-50 border border-gray-200 text-sm text-gray-700">
+      <p><strong>类型：</strong> [指南/药品/医院/社区/研究]</p>
+      <p><strong>标题：</strong> </p>
+      <p><strong>链接：</strong> </p>
+      <p><strong>来源机构：</strong> </p>
+      <p><strong>年份：</strong> </p>
+      <p><strong>可信度：</strong> [官方权威/专家观点/认证组织/病友经验]</p>
+      <p><strong>简述：</strong> </p>
+    </div>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-base font-semibold text-gray-800 mb-2">审核标准</h2>
+    <ul class="text-sm text-gray-600 space-y-1">
+      <li>链接必须可访问（不收录死链）</li>
+      <li>来源必须可追溯（不收录匿名来源）</li>
+      <li>病友经验类必须附带 caution 提示</li>
+      <li>药品信息不包含剂量建议</li>
+    </ul>
+  </section>
+</Base>
