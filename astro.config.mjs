@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://yuenushan.github.io',
+  site: 'https://ticnav-cn.github.io',
   base: '/ticnav',
   integrations: [sitemap()],
   vite: {

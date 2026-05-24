@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yuenushan.github.io/ticnav/sitemap-index.xml
+Sitemap: https://ticnav-cn.github.io/ticnav/sitemap-index.xml
