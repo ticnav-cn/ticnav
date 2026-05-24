@@ -31,10 +31,9 @@ entries:
   - title: "ESSTS临床指南2.0版：药物治疗(Part III)"
     organization: ESSTS
     year: 2021
-    url: https://link.springer.com/article/10.1007/s00787-021-01899/z
+    url: https://link.springer.com/article/10.1007/s00787-021-01899-z
     trust_level: official
     lang: en
-    has_chinese_version: false
     description: "ESSTS药物治疗指南2.0版，阿立哌唑为首选推荐，含tiapride/risperidone/clonidine/guanfacine等推荐"
   - title: "ESSTS临床指南2.0版：心理干预(Part II)"
     organization: ESSTS
@@ -42,7 +41,6 @@ entries:
     url: https://pubmed.ncbi.nlm.nih.gov/34313861/
     trust_level: official
     lang: en
-    has_chinese_version: false
     description: "推荐HRT/CBIT和ERP为一线心理干预，视频会议方式有最多循证证据"
   - title: "ERP vs 利培酮RCT：行为疗法与药物疗效对比"
     organization: Frontiers in Psychiatry
@@ -50,7 +48,6 @@ entries:
     url: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1360895/full
     trust_level: expert
     lang: en
-    has_chinese_version: false
     description: "首个直接比较ERP与利培酮的RCT，两者均有效，9月随访ERP在生活质量方面略有优势，药物组不良反应更多"
   - title: "远程CBIT小组治疗RCT"
     organization: European Child & Adolescent Psychiatry
@@ -58,7 +55,6 @@ entries:
     url: https://link.springer.com/article/10.1007/s00787-025-02912-5
     trust_level: expert
     lang: en
-    has_chinese_version: false
     description: "2025年发表的远程小组CBIT治疗RCT，证明线上方式可行性"
   - title: "SMA功能特异性靶点cTBS治疗TS"
     organization: PMC
@@ -66,7 +62,6 @@ entries:
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11843473/
     trust_level: expert
     lang: en
-    has_chinese_version: false
     description: "发现SMA功能特异性靶点比常规靶点更有效，1周cTBS后19例中4例YGTSS评分降低≥30%"
   - title: "药用大麻治疗青少年Tourette综合征：首个开放标签试验"
     organization: BJPsych Open/Cambridge
@@ -74,7 +69,6 @@ entries:
     url: https://www.cambridge.org/core/journals/bjpsych-open/article/medicinal-cannabis-for-tics-in-adolescents-with-tourette-syndrome/1A788DF6DE778600989CD90AF7A604D0
     trust_level: expert
     lang: en
-    has_chinese_version: false
     description: "首个青少年TS药用大麻研究(12-18岁)，THC:CBD=10:15，抽动改善显著(P=0.003)，无严重不良反应"
   - title: "母体自身免疫病与子代抽动/Tourette风险：台湾全国数据库"
     organization: Frontiers in Pediatrics
@@ -82,5 +76,4 @@ entries:
     url: https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2025.1440366/full
     trust_level: expert
     lang: en
-    has_chinese_version: false
     description: "亚洲首个大规模全国队列研究，母体RA/SLE/干燥综合征/强直性脊柱炎/Graves病等为风险因素"

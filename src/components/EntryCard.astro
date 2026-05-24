@@ -30,21 +30,18 @@ const { title, subtitle, url, trustLevel, lang, organization, year, tags, hasChi
           {tags.map((tag) => <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">{tag}</span>)}
         </div>
       )}
-      {hasChineseVersion && (
-        <div class="mt-1.5">
-          <span class="inline-flex items-center text-xs text-green-600 gap-1">
-            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586L7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            中文版可读
-          </span>
-          {chineseVersionUrl && <a href={chineseVersionUrl} target="_blank" rel="noopener noreferrer" class="text-xs text-indigo-500 ml-1 hover:underline">查看</a>}
-        </div>
-      )}
     </div>
     <div class="flex items-center gap-1.5 shrink-0">
       <TrustBadge level={trustLevel} />
       {lang && <LangBadge lang={lang} />}
     </div>
   </div>
+  {hasChineseVersion && (
+    <div class="mt-2 flex items-center gap-1.5 text-xs text-green-600">
+      <svg class="w-3 h-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586L7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+      <span>中文版可读{chineseVersionUrl ? '（点击访问中文版）' : ''}</span>
+    </div>
+  )}
   {caution && (
     <div class="mt-2 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs border border-orange-100">
       {caution}
