@@ -36,6 +36,15 @@ const navItems = [
     <meta name="twitter:description" content={description ?? 'TicNav - 抽动症信息导航站，帮患者找到信息在哪里'} />
     <link rel="canonical" href={Astro.url.href} />
     <title>{title} | TicNav</title>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?369e28640794da1f55ec522490ae4f3e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
   </head>
   <body class="bg-gray-50 min-h-screen">
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
