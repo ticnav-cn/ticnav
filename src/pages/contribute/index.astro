@@ -2,55 +2,68 @@
 import Base from '../../layouts/Base.astro';
 ---
 
-<Base title="贡献数据" description="如何向TicNav提交新的信息链接">
-  <h1 class="text-xl font-bold text-gray-900 mb-4">如何贡献数据</h1>
+<Base title="参与贡献" description="帮助完善TicNav抽动症信息导航站">
+  <h1 class="text-xl font-bold text-gray-900 mb-1">参与贡献</h1>
+  <p class="text-sm text-gray-500 mb-6">TicNav 是一个由患者和家属共同维护的信息站，你的每一条建议都可能帮到其他家庭</p>
 
   <section class="mb-6">
-    <h2 class="text-base font-semibold text-gray-800 mb-2">为什么贡献</h2>
-    <p class="text-sm text-gray-600">TicNav 的数据由社区驱动。如果你发现了一个有用的链接、一家有专科门诊的医院、或者一个靠谱的病友社区，贡献出来就能帮到其他患者和家属。</p>
+    <h2 class="text-base font-semibold text-gray-800 mb-3">你可以贡献什么</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="p-4 rounded-xl border border-gray-200 bg-white">
+        <div class="text-xl mb-1">🏥</div>
+        <h3 class="text-sm font-semibold text-gray-900">推荐医院 / 医生</h3>
+        <p class="text-xs text-gray-500 mt-1">你去过的抽动症专科门诊，靠谱的医生名字和所在医院</p>
+      </div>
+      <div class="p-4 rounded-xl border border-gray-200 bg-white">
+        <div class="text-xl mb-1">📋</div>
+        <h3 class="text-sm font-semibold text-gray-900">指南 / 文章链接</h3>
+        <p class="text-xs text-gray-500 mt-1">权威机构发布的诊疗指南、专家科普文章链接</p>
+      </div>
+      <div class="p-4 rounded-xl border border-gray-200 bg-white">
+        <div class="text-xl mb-1">💬</div>
+        <h3 class="text-sm font-semibold text-gray-900">病友社区 / 群</h3>
+        <p class="text-xs text-gray-500 mt-1">活跃的病友群、公众号、论坛，方便大家找到同伴</p>
+      </div>
+      <div class="p-4 rounded-xl border border-gray-200 bg-white">
+        <div class="text-xl mb-1">🔧</div>
+        <h3 class="text-sm font-semibold text-gray-900">纠错 / 改进建议</h3>
+        <p class="text-xs text-gray-500 mt-1">发现信息有误、链接失效、或有更好的表达方式</p>
+      </div>
+    </div>
   </section>
 
   <section class="mb-6">
-    <h2 class="text-base font-semibold text-gray-800 mb-2">三种贡献方式</h2>
-
+    <h2 class="text-base font-semibold text-gray-800 mb-3">怎么提交</h2>
     <div class="space-y-3">
-      <div class="p-4 rounded-lg border border-gray-200 bg-white">
-        <h3 class="text-sm font-semibold text-gray-900">方式 A：GitHub Issue（推荐）</h3>
-        <p class="text-xs text-gray-600 mt-1">在仓库中提交 Issue，使用预填模板，维护者审核后录入。</p>
+
+      <div class="p-4 rounded-xl border-2 border-indigo-200 bg-indigo-50">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-lg">📧</span>
+          <h3 class="text-sm font-semibold text-indigo-900">发邮件（最简单）</h3>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-indigo-600 text-white">推荐</span>
+        </div>
+        <p class="text-xs text-gray-600 mb-2">把你想补充的内容发到下面的邮箱，说明类型（医院/指南/社区/纠错）即可，我们会在3个工作日内录入。</p>
+        <a href="mailto:425800970@qq.com" class="inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 hover:text-indigo-800">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          425800970@qq.com
+        </a>
       </div>
 
-      <div class="p-4 rounded-lg border border-gray-200 bg-white">
-        <h3 class="text-sm font-semibold text-gray-900">方式 B：直接 PR</h3>
-        <p class="text-xs text-gray-600 mt-1">Fork 仓库 → 编辑对应 YAML 文件 → 提交 Pull Request。适合有 GitHub 使用经验的人。</p>
+      <div class="p-4 rounded-xl border border-gray-200 bg-white">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-lg">🐙</span>
+          <h3 class="text-sm font-semibold text-gray-900">GitHub Issue（适合技术用户）</h3>
+        </div>
+        <p class="text-xs text-gray-600 mb-2">在仓库提交 Issue，审核后合并录入。</p>
+        <a href="https://github.com/ticnav-cn/ticnav/issues/new" target="_blank" rel="noopener noreferrer" class="text-xs text-indigo-600 hover:underline">
+          github.com/ticnav-cn/ticnav →
+        </a>
       </div>
 
-      <div class="p-4 rounded-lg border border-gray-200 bg-white">
-        <h3 class="text-sm font-semibold text-gray-900">方式 C：表单提交（低门槛）</h3>
-        <p class="text-xs text-gray-600 mt-1">通过腾讯问卷/Google Form 提交，维护者定期手动录入。适合不熟悉 GitHub 的用户。</p>
-      </div>
     </div>
   </section>
 
-  <section class="mb-6">
-    <h2 class="text-base font-semibold text-gray-800 mb-2">Issue 模板</h2>
-    <div class="p-3 rounded bg-gray-50 border border-gray-200 text-sm text-gray-700">
-      <p><strong>类型：</strong> [指南/药品/医院/社区/研究]</p>
-      <p><strong>标题：</strong> </p>
-      <p><strong>链接：</strong> </p>
-      <p><strong>来源机构：</strong> </p>
-      <p><strong>年份：</strong> </p>
-      <p><strong>可信度：</strong> [官方权威/专家观点/认证组织/病友经验]</p>
-      <p><strong>简述：</strong> </p>
-    </div>
-  </section>
-
-  <section class="mb-6">
-    <h2 class="text-base font-semibold text-gray-800 mb-2">审核标准</h2>
-    <ul class="text-sm text-gray-600 space-y-1">
-      <li>链接必须可访问（不收录死链）</li>
-      <li>来源必须可追溯（不收录匿名来源）</li>
-      <li>病友经验类必须附带 caution 提示</li>
-      <li>药品信息不包含剂量建议</li>
-    </ul>
+  <section class="p-4 rounded-xl bg-gray-50 border border-gray-200 text-xs text-gray-500">
+    <p>所有贡献在录入前会经过人工审核，确保信息可追溯、链接可访问。药品信息不包含剂量建议，病友经验类内容会添加提示说明。</p>
   </section>
 </Base>
